@@ -39,7 +39,7 @@ body {
   margin-left: 6%;
   margin-top: 20px;
   margin-bottom: 0;
-  background-image: url('../images/adoptadog-logo.svg');
+  background-image: url('images/adoptadog-logo.svg');
   
   background-repeat: no-repeat;
 }
@@ -132,14 +132,11 @@ main {
  
 }
 
-/* This media querie is for Medium devices */
 @media only screen and (min-width: 768px) {
   .blog-preview {
     display: block;
   }
 }
-
-
 
 .blog-preview .title {
   color: #134350;
@@ -179,6 +176,7 @@ main {
 .blog-preview-snippet .read-more:hover {
   text-decoration: underline;
 }
+
 .blog-preview-snippet .read-more::after {
   content: " >>";
 }
@@ -344,6 +342,12 @@ main {
   padding-right: 45%;
 }
 
+@media only screen and (max-width: 750px) {
+  .checkout-form {
+    padding-right: 0;
+  }
+}
+
 .checkout-form label, 
 .checkout-form h4 {
   display: block;
@@ -392,7 +396,6 @@ main {
   justify-content: space-evenly;
 }
 
-
 .checkout-form .location input,
 .checkout-form .location select {
   width: 100%;
@@ -408,6 +411,7 @@ main {
 
 .checkout-form .state-input {
   margin: 0 5px;
+  min-width: 4rem;
 }
 
 .dog-list {
@@ -426,13 +430,13 @@ main {
 .dog-list .duffy {
   width: 80px;
   height: 80px;
-  background-image: url("../images/lucas-card.jpg");
+  background-image: url("images/lucas-card.jpg");
   background-size: cover;
   background-position-x: center;
 }
 
 .dog-list .duffy {
-  background-image: url("../images/duffy-card.jpg");
+  background-image: url("images/duffy-card.jpg");
 }
 
 .dog-list .dog-name {
