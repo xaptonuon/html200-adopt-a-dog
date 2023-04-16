@@ -1,111 +1,129 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="doggystyles.css">
-    <title>Checkout | AdoptaDog</title>
-  </head>
+    <head>
+        <link rel="stylesheet" href="doggystyles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+    </head>
 
-  <body>
-    <header>
-      <section>
-        <article class="">
-          <img class="logo" src="images/adoptadog-logo.svg" alt="AdoptADog logo - dog silhouette followed by white text">
-          <h2>Seattle's premiere dog adoption agency</h2>
-        </article>
+    <body>
 
-        <aside class="">
-          <img class="checkout-img" src="images/cart-icon.svg" alt="cart icon">&nbsp;$0.00
-          <a href="checkout.html" class="button green-button">Checkout</a>
-        </aside>
-      </section>
-
+      <header class="page-header">
+        <div class="header-logo"></div>
+        <h1 class="main-title">Seattle's Premiere Dog Adoption Agency</h1>
+        <div class="checkout-balance">
+            <img class="cart-icon" src="images/cart-icon.svg" alt="header image">
+            <span class="dollar">$1234.56</span>
+        </div>
+        <a class="button-checkout" href="checkout.html">checkout</a>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
+    <nav class="topnav">
+        <a class="navigation-link" href="index.html">Home</a> /
+        <a class="navigation-link" href="dogs.html">Dogs</a> /
+        <a class="navigation-link" href="blog.html">Blog</a>
     </nav>
 
-    <main>
+      <main>
+        <h3 class="page-title">Checkout</h3>
 
-      <section>
+        <form class="checkout-form">
 
-        <h1>Checkout</h1>
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name">
 
-        <form class="" method="GET">
-          <label>Name:</label>
-          <input id="name" type="text" name="name">
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" name="email-address">
 
-          <label>Email Address:</label>
-          <input id="email" type="email" name="email">
+            <label for="street-address">Street Address</label>
+            <input type="text" name="street-address" id="street-address">
 
-          <label>Street Address:</label>
-          <input id="address" type="text" name="address">
+            <div class="location">
 
-          <label>City:</label>
-          <input id="city" type="text" name="city">
+                <div class="location-input city-input">
+                    <label for="city">City</label> 
+                    <input type="text" name="city" id="city">
+                </div>
 
-          <label>State:</label>
-          <input id="state" type="text" name="state">
+                <div class="location-input state-input">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option label="WA" value="WA">WA</option>
+                        <option label="OR" value="OR">OR</option>
+                        <option label="CA" value="CA">CA</option>
+                        <option label="ID" value="ID">ID</option>
 
-          <label>Zip Code:</label>
-          <input id="zip" type="text" name="zip">
-       
-        <label>First Time Adopter?</label>
-        <div class="form-radio-alignment">
-          <label for="yes">Yes <input id="yes" type="radio" name="first-time" value="yes"></label>
-          <label for="no">No <input id="no" type="radio" name="first-time" value="no"></label>
-        </div>
-        <label>Pickup Location:</label> <input id="pickup" type="text" name="pickup">
-        
-        <label>Dogs Adopted:</label>
-        
-          <div>
-            <div class="card">
-              <img class="card-img" src="images/lucas-checkout.jpg" alt="happy black dog.">
-              <h4 class="card-title">Lucas</h4>
-              <p><strong>Cost to Adopt:</strong> $123.45</p>
+                    </select>
+                </div>
+
+                <div class="location-input zip-input">
+                    <label for="zipcode">Zip Code</label> 
+                    <input type="text" name="zipcode" id="zipcode">
+                </div>
+                
             </div>
 
-            <div class="card">
-              <img class="card-img" src="images/duffy-checkout.jpg" alt="calm brown and white dog.">
-              <h4 class="card-title">Duffy</h4>
-              <p><strong>Cost to Adopt:</strong> $123.45</p>
-            </div>
+            <h4 class="adopter-title">First Time Adopter?</h4>
 
-          </div>
+            <input type="radio" id="yes" name="answer" value="yes"/>
+            <label class="answer-label" for="yes">Yes</label>
+            <input type="radio" id="no" name="answer" value="no">
+            <label class="answer-label" for="no">No</label>
+
+            <h4 class="pickup-location">Pickup Location</h4>
+
+            <select class="location-select" name="seattle" id="seattle">
+                <option value="select-city" id="Seattle">Seattle</option>
+                <option value="select-city" id="Tacoma">Tacoma</option>
+                <option value="select-city" id="Olympia">Olympia</option>
+                <option value="select-city" id="Bellingham">Bellingham</option>
+                <option value="select-city" id="Vancouver">Vancouver</option>
+
+            </select>
+
+            <h4 class="dogs-adopted">Dogs Adopted</h4>
+            
+            <div class="dog-list">
+
+                <div class="adopted-dog">
+                    <div class="lucas"></div>
+                    <div class="dog-info">
+                        <h4 class="dog-name">Lucas</h4>
+                        <p class="dog-cost"><b>Cost to Adopt:</b> $123.45</p>
+                    </div> 
+                </div>
+    
+                <div class="adopted-dog">
+                    <div class="duffy"></div>
+                    <div class="dog-info">
+                        <h4 class="dog-name">Duffy</h4>
+                        <p class="dog-cost"><b>Cost to Adopt:</b> $123.45</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <h4 class="adoption-cost">Total Adoption Cost</h4>
+            <p class="adoption-cost-figure">$1234.56</p>
+            <input class="submit-button" type="submit" value="Submit">
+
         </form>
 
-      </section>
+      </main>
 
-    </main>
-
-    <footer>
-
-      <section>
-
-        <img class="bizlogo" src="images/adoptadog-logo.svg" alt="AdoptADog Business Logo">
-        <p>Seattle's premiere dog 🐕 adoption agency</p>
-
-        <nav>
-
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dogs.html">Dogs</a></li>
-            <li><a href="blog.html">Blog</a></li>
-          </ul>
-
+      <footer class="page-footer">
+        <img class="footer-logo" src="images/adoptadog-logo.svg" alt="adopt a dog logo">
+        <p class="footer-text">Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
+            sseque invenienihil imaximu scideru ptistiusam consequauat</p>
+        <nav class="footernav">
+            <a href="index.html">Home /</a>
+            <a href="dogs.html">Dogs /</a>
+            <a href="blog.html">Blog</a>
         </nav>
-        <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-
-      </section>
-
+        <p class="copyright">&#169; 2023 🐕 Adoptadog, LLC | Seattle, WA</p>
     </footer>
-
-  </body>
+    </body>
 
 </html>
