@@ -1,0 +1,32 @@
+Testing for Adopt-a-Dog Seattle
+HTML200-JavaScript & Responsive Design Course Project
+
+I tested my site on the following devices and browsers:
+
+Desktop/Laptop:
+- Edge (Windows/macOS)
+- Safari (Windows/macOS
+- Brave (Windows/macOS)
+- Chrome (Windows/macOS)
+
+Mobile:
+- Safari on iOS on iPhone Pro 12 (6.1" screen) and iPad Pro (10.5" screen)
+- Edge on iOS on iPhone Pro 12 (6.1" screen) and iPad Pro (10.5" screen)
+
+The target audience for this website is primarily adults over the age of 18 in Western WA State.
+
+The form and function of my website was good on mobile. 
+The site scaled well on both phones and tablets, and I didn't notice any browser-dependent issues.
+The main problem I observed was aesthetic, and primarily in portrait mode, which is 
+the typical screen orientation for mobile users. The header seemed to be cluttered,
+with elements much to close to one another, albeit not overlapping. In the body of each
+page, pictures, text, buttons, etc were all responsive and perofmre3d as expected.
+
+As for desktop, my header issue was sort of the opposite--I felt the header
+took up much more space than needed, even for devices that can afford the
+screen-real estate. There was lots of unused space, and the elements were much smaller than I anticipated.
+The checkout buttons and information that displays in the top right corner should probably be made bigger for desktop users.
+
+The site is generally responsive and built using progressive enhancement. That said, it tested well on both
+desktop and mobile devices. While the CSS for the site could use some adjustments, especially for both the header and footer,
+for purposes of this assignment I'm leaving well enough alone.
