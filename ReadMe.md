@@ -7,16 +7,16 @@ The purpose of this website is to help Adopt-a-Dog Seattle reach potential pet p
 
 # Site Pages
 ## Home
-This page is for the user to see what types of dogs they like. There is no server logic to this page so the users choice is not persisted from page to page.
+The Home page provides the user with an introduction to Adopt-a-Dog Seattle, showcasing some select dogs up for adoption and a sneak peak at the blog.
 
 ## Dogs
-This page is to see all the dogs that are for the user to choose and see what they like. There is no server logic to this page so the users choice is not persisted from page to page.
+This page shows all dogs that are currently available for adoption. that are for the user to choose and see what they like.
 
 ## Blog
-This page is a blog page to inform users of what they can do with their new adopted dog.
+This blog page provides users with helpful dog care information and news.
 
 ## Checkout
-This page is to fill out all the information so that the user can buy the dog. Checkout functionnality has not been implemented yet. 
+The checkout page helps users confirm their personal information and proceed with reserving adoptions.
 
 # User Personas
 Users for the site are primarily adults over the age of 18 in Western Washington State. Since this site is newly launched, there is a lack of user-analytics collected at this time. Site visitor data can be collected over time and evaluated on different browsers/devices. WebKit and Chromium based browsers are primarily targeted.
