@@ -3,8 +3,13 @@ function showDogInformation(dog, breed, price) {
     alert(description);
 }
 
-let sum = 0;
-function adoptDog(price) {
-    sum = price + sum;
-    alert('Total Price $' + sum);
-}
+let total = 0;
+$(document).ready(function(){
+  $(".adopt").click(function(){
+      total+=123.45;
+
+      $("#cart-total").text(total);
+      alert('Total: $' + total);
+  });
+ 
+  });

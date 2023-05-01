@@ -1,19 +1,14 @@
-function summary() {
-    const name = document.getElementById('name').value
-    const email = document.getElementById('email-address').value
-    const streetAddress = document.getElementById('street-address').value
-    const city = document.getElementById('city').value
-    const state = document.getElementById('state').value
-    const zipcode = document.getElementById('zipcode').value
-    const yes = document.getElementById('yes').checked
-    const no = document.getElementById('no').checked
-    const location = document.getElementById('location').value
-    const firstTimeAdopter = yes
-    const answers = {
-        name, email, streetAddress, city, state, zipcode, location, firstTimeAdopter
+$('.checkout-form').submit(function( event) {
+    if ($('#name').val(),$('#email-address').val(),$('#street-address').val(),$('#city').val() == "") {
+      alert("Please fill out all the required information.")
     }
 
-    console.log(answers)
-    alert("Thank you. The form information has been received.")
-    return false
-}
+    else {
+    event.preventDefault();
+    alert("Thank you The form information has been received.")
+    console.log("Name: " + $('#name').val());
+    console.log("Email: " + $('#email-address').val());
+    console.log("Street: " + $('#street-address').val());
+    console.log("City: " + $('#city').val());
+    }
+  });
